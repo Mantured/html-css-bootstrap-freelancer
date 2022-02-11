@@ -25,24 +25,117 @@
 <body>
             <!-- header container (0 auto)  col 6 o 2 col e do il colore al header direttamente oppure container fluid 2 col  2 col 4 col  2 col 2col  -->
             <header>
-                <section class="container-fluid">
+            <!-- // metodo con container fluid-->
+            <!--<section class="container-fluid">
                     <div class="row">
                         <div class="col">
                             <div class="my-riempitore"></div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-8">
                             <div class="my-riempitore"></div>
                         </div>
                         <div class="col">
                             <div class="my-riempitore"></div>
                         </div>
                     </div>
+                </section> -->
+
+                <!-- // con container --> <!-- più interessante -->
+                <section class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="my-riempitore bg-success">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="my-riempitore"></div>
+                        </div>
+                        <div class="col">
+                            <div class="my-riempitore bg-success"></div>
+                        </div>
+                    </div>
                 </section>
             </header>
-            <!-- jumbotron container fluid 12 col centrato ed un margin bottom -->
+
+            <!-- jumbotron container fluid 12 col centrato ed un margin bottom contrario a sopra, testo nelle 6 col vuoto ai lati -->
+            <section class="jumbotron">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"> <!--attenzione che con il responsive si prende tutta la width e invece deve solo sparire -->
+                            <div class="my-jumbotron"></div>
+                        </div>
+                        <div class="col-sm-10 col-md-8 col-lg-6">
+                            <div class="my-jumbotron bg-success"><h1>start bootsrap</h1></div>
+                        </div>
+                        <div class="col"> <!-- attenzione che con il responsive si prende tutta la width e invece deve solo sparire -->
+                            <div class="my-jumbotron"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- main h1 titolo col 12  6 immagini nella stessa row (così elimino la rindondanza e mi vanno a capo da sole (forse)) con un gutter -->
-            <!-- da decidere se fa parte del main container fluid  h1 come sopra identico pattern due colonne bottoncino -->
-            <!-- form contact me  -->
+            <main>
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>portafolio</h2>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 bg-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta numquam itaque velit minus. Deserunt quia, ad quos ipsam consequuntur quasi veniam quibusdam nemo suscipit soluta blanditiis excepturi rem accusamus optio.
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4  bg-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta numquam itaque velit minus. Deserunt quia, ad quos ipsam consequuntur quasi veniam quibusdam nemo suscipit soluta blanditiis excepturi rem accusamus optio.
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4  bg-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta numquam itaque velit minus. Deserunt quia, ad quos ipsam consequuntur quasi veniam quibusdam nemo suscipit soluta blanditiis excepturi rem accusamus optio.
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4  bg-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta numquam itaque velit minus. Deserunt quia, ad quos ipsam consequuntur quasi veniam quibusdam nemo suscipit soluta blanditiis excepturi rem accusamus optio.
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4  bg-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta numquam itaque velit minus. Deserunt quia, ad quos ipsam consequuntur quasi veniam quibusdam nemo suscipit soluta blanditiis excepturi rem accusamus optio.
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4  bg-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta numquam itaque velit minus. Deserunt quia, ad quos ipsam consequuntur quasi veniam quibusdam nemo suscipit soluta blanditiis excepturi rem accusamus optio.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- da decidere se fa parte del main container fluid  h1 come sopra identico pattern due colonne bottoncino -->
+                <section class="my-about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>about</h2>
+                            </div>
+                            <div class="col-6">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore voluptatem error eius in, accusantium quam officia fugit perferendis veniam facere ullam labore quae nemo adipisci? Ipsam aliquam praesentium debitis vero?
+                            </div>
+                            <div class="col-6">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore voluptatem error eius in, accusantium quam officia fugit perferendis veniam facere ullam labore quae nemo adipisci? Ipsam aliquam praesentium debitis vero?
+                            </div>
+                            <div class="col-12">bottoni</div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <!-- form contact me da valutare la posizione -->
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12"><h2>Contact me arrr</h2></div>
+                        <div class="col-12"><p>Name</p></div>   <!-- //intanto dei p presumo siano input type -->
+                        <div class="col-12"><p>Email Adress</p></div>
+                        <div class="col-12"><p>Phone Number</p></div>
+                        <div class="col-12"><p>Message</p></div> <!-- //dovrà prednere 3 volte l'altezza deglio altri -->
+                        <div class="col-12"><p>Send</p></div> <!-- //bottone send -->
+
+                    </div>
+                </section>
+
+            </main>
+            
             <!-- footer 3 col + 12 col sotto  -->
 
 </body>
