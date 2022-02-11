@@ -18,4 +18,17 @@ section.jumbotron{
 
 .my-about{
     background-color: chartreuse;
+    height: 300px;
+}
+
+.my-box{
+    padding: 0 2rem;
+}
+
+.my-footer{
+    background-color:rgb(58, 84, 109);
+}
+
+.yellow{
+    background-color: yellow;
 }
