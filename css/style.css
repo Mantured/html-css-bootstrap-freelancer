@@ -1,27 +1,50 @@
+/* *Navbar con header */
+
 header{
     background-color: rgb(44, 62, 80);
     /* height: 70px; */
 }
-
 .my-height{
     height: 70px;
 }
 
+/* * Jumbotron */
 
-/* Provvisori */
-section.jumbotron{
+section#jumbotron{
     background-color: rgb(26, 188, 156);
 }
 
-.my-riempitore{
-    background-color: blueviolet;
-    height: 70px; /* oppure 7/8vh */
+#jumbo-main{
+    width: 560px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#photo-user{
+    width: 250px;
+}
+
+/* *Portfolio */
+
+.title-section{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1{
+    font-size: 3rem;
 }
 
 
 .my-about{
     background-color: rgb(26, 188, 156);
-    height: 350px;
 }
 
 .my-box{
@@ -60,9 +83,7 @@ h1{
     text-transform: uppercase;
 }
 
-h1{
-    font-size: 4rem;
-}
+
 
 header .container .row .col-6 h4{
     display: inline;
@@ -77,29 +98,16 @@ p{
     font-size: 1.05rem;
 }
 
+/* * separatore linee stellina  */
 
 .line-star{
     width: 150px;
     height: 4px;
     border-radius: 4px;
     background-color: whitesmoke;
-    display: inline-block;
 }
 
 .fa-star{
-    margin: 0 1.5rem;
-    vertical-align: middle;
     font-size: 1.5rem;
 }
 
-.my-lh{
-    line-height: 70px;
-}
-
-/* 
-line-height: 70px;
-padding: 3rem 0; */
-
-#photo-user{
-    width: 250px;
-}

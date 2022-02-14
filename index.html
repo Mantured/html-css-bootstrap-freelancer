@@ -75,17 +75,21 @@
             </header>
 
             <!-- jumbotron container fluid 12 col centrato ed un margin bottom contrario a sopra, testo nelle 6 col vuoto ai lati -->
-            <section class="jumbotron text-white mb-5">
+            <section id="jumbotron"  class="text-white mb-5">
                 <div class="container">
-                    <div class="row text-center align-items-center">
+                    <div class="row text-center py-4">
                         <!--<div class="col">--> <!--attenzione che con il responsive si prende tutta la width e invece deve solo sparire -->
                             <!-- <div class="my-jumbotron"></div> -->
                         <!--</div> -->
-                        <div class="col py-5 my-lh">
-                            <img  src="img/avatar.svg" class="img-fluid pb-3" id="photo-user" alt=""><!-- andrà anche un img  -->
-                            <h1>start bootstrap</h1>
-                            <div class="line-star"></div> <i class="fas fa-star"></i><div class="line-star"></div>
-                            <h4>graphic artist - web designer - illustrator</h4>
+                        <div class="col-12">
+                            <div id="jumbo-main">
+                                <img  src="img/avatar.svg" class="img-fluid pb-3" id="photo-user" alt=""><!-- andrà anche un img  -->
+                                <h1>start bootstrap</h1>
+                                <div class="divider d-flex align-items-center ">
+                                    <div class="line-star"></div><i class="fas fa-star mx-4"></i><div class="line-star"></div>
+                                </div> 
+                                <h4>graphic artist - web designer - illustrator</h4>
+                            </div>
                         </div>
                         <!-- <div class="col">--> <!-- attenzione che con il responsive si prende tutta la width e invece deve solo sparire -->
                             <!-- <div class="my-jumbotron"></div> -->
@@ -99,9 +103,13 @@
                 <section class="my-portfolio mb-5">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 mb-4 text-center">
-                                <h2>portfolio</h2>
-                                <div class="line-star bg-dark"></div> <i class="fas fa-star"></i><div class="line-star bg-dark"></div>
+                            <div class="col-12">
+                                <div class="title-section mb-2">
+                                    <h2>portfolio</h2>
+                                    <div class="divider d-flex align-items-center">
+                                        <div class="line-star bg-dark"></div><i class="fas fa-star mx-4"></i><div class="line-star bg-dark"></div>
+                                    </div> 
+                                </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-4 mb-4"><!-- ? attenzione ai bg che danno proprietà al contenuto -->
                                 <img src="img/cabin.png" alt="">
@@ -129,15 +137,19 @@
                 <section class="my-about text-white">
                     <div class="container">
                         <div class="my-box">
-                            <div class="row justify-content-evenly">
+                            <div class="row justify-content-evenly p-5">
                                 <div class="col-12 text-center py-4 lh-lg">
-                                    <h2>about</h2>
-                                    <div class="line-star"></div> <i class="fas fa-star"></i><div class="line-star"></div>
+                                    <div class="title-section mb-2">
+                                        <h2>about</h2>
+                                        <div class="divider d-flex align-items-center">
+                                            <div class="line-star"></div><i class="fas fa-star mx-4"></i><div class="line-star"></div>
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6">
                                     <p>Freelancer is a free bootsrap theme created by Start Bootsrap. The Download includes the complete sourche files including HTML, CSS and JavaScript as well as optional LESS stylesheets for easy customization.</p> 
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6">
                                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                                 </div>
                                 <div class="col-12 text-center"><div class="btn btn-outline-light"><i class="fas fa-download"></i> Download</div></div>
@@ -147,11 +159,18 @@
                 </section>
 
                 <!-- form contact me da valutare la posizione -->
-                <section class="my-box">
+                <section class="my-contact-me">
                     <div class="container">
                         <section class="my-box"> <!-- chissà se spacca tutto -->
                             <div class="row">
-                                <div class="col-12"><h2>Contact me arrr</h2></div>
+                                <div class="col-12">
+                                    <div class="title-section mb-2">
+                                        <h2>contact me</h2>
+                                        <div class="divider d-flex align-items-center">
+                                            <div class="line-star bg-dark"></div><i class="fas fa-star mx-4"></i><div class="line-star bg-dark"></div>
+                                        </div> 
+                                    </div>
+                                </div>
                                 <div class="col-12"><p>Name</p></div>   <!-- //intanto dei p presumo siano input type -->
                                 <div class="col-12"><p>Email Adress</p></div>
                                 <div class="col-12"><p>Phone Number</p></div>
@@ -178,6 +197,8 @@
                     <div class="col-12">copyright c</div>
                 </section>
             </footer>
+
+            
 
 </body>
 
