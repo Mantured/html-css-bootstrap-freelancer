@@ -28,7 +28,19 @@ section#jumbotron{
     width: 250px;
 }
 
-/* *Portfolio */
+/* * separatore linee stellina  */
+
+.line-star{
+    width: 150px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+
+.fa-star{
+    font-size: 1.5rem;
+}
+
 
 .title-section{
     height: 100px;
@@ -42,22 +54,71 @@ h1{
     font-size: 3rem;
 }
 
+/* * main */
 
-.my-about{
+section#portfolio div div.row div img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* * footer */
+
+section#footer-top div.container div.row div i.fab{
+    border: 1px solid whitesmoke;
+    width: 50px;
+    height: 50px;
+    margin-right:0.5rem;
+    padding:15px;
+}
+
+section#footer-bot div.container div.row div.col-12 div.copyright{
+    height: 70px;
+}
+
+
+
+
+
+
+.bg-green{
     background-color: rgb(26, 188, 156);
 }
-
-.my-box{
-    padding: 0 2rem;
-}
-
-.my-footer{
+.bg-grey{
     background-color:rgb(58, 84, 109);
 }
 
-.yellow{
-    background-color: yellow;
+.bg-black{
+    background-color: rgb(38, 54, 70);
 }
+
+.color-txt-green{
+    color:rgb(39, 146, 137) ;
+}
+
+
+/* *header testing */
+h4,
+h3,
+h2,
+h1{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header .container .row .col-6 h4{
+    display: inline;
+}
+
+p{
+    font-size: 1.05rem;
+}
+
+
+
+
+
+
+
 
 /* Prove per il centraggio */
 
@@ -74,40 +135,6 @@ h1{
     line-height: 70px;
 } */
 
-/* *header testing */
-h4,
-h3,
-h2,
-h1{
-    font-weight: 600;
-    text-transform: uppercase;
-}
 
 
-
-header .container .row .col-6 h4{
-    display: inline;
-}
-
-section.my-portfolio div div.row div img{
-    width: 100%;
-    border-radius: 1rem;
-}
-
-p{
-    font-size: 1.05rem;
-}
-
-/* * separatore linee stellina  */
-
-.line-star{
-    width: 150px;
-    height: 4px;
-    border-radius: 4px;
-    background-color: whitesmoke;
-}
-
-.fa-star{
-    font-size: 1.5rem;
-}
 

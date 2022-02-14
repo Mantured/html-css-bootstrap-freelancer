@@ -100,7 +100,7 @@
 
             <!-- main h1 titolo col 12  6 immagini nella stessa row (così elimino la rindondanza e mi vanno a capo da sole (forse)) con un gutter -->
             <main>
-                <section class="my-portfolio mb-5">
+                <section id="portfolio" class="mb-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
@@ -111,7 +111,8 @@
                                     </div> 
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"><!-- ? attenzione ai bg che danno proprietà al contenuto -->
+                            <!-- si può gestire sia con mb o gon gutter preferisco mb -->
+                            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                                 <img src="img/cabin.png" alt="">
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
@@ -134,11 +135,10 @@
                 </section>
 
                 <!-- da decidere se fa parte del main container fluid  h1 come sopra identico pattern due colonne bottoncino -->
-                <section class="my-about text-white">
+                <section id="about" class="text-white mb-5 bg-green">
                     <div class="container">
-                        <div class="my-box">
                             <div class="row justify-content-evenly p-5">
-                                <div class="col-12 text-center py-4 lh-lg">
+                                <div class="col-12">
                                     <div class="title-section mb-2">
                                         <h2>about</h2>
                                         <div class="divider d-flex align-items-center">
@@ -146,22 +146,24 @@
                                         </div> 
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <p>Freelancer is a free bootsrap theme created by Start Bootsrap. The Download includes the complete sourche files including HTML, CSS and JavaScript as well as optional LESS stylesheets for easy customization.</p> 
+                                <div class="row">
+                                    <div class="col-12 col-md-6 px-5">
+                                        <p>Freelancer is a free bootsrap theme created by Start Bootsrap. The Download includes the complete sourche files including HTML, CSS and JavaScript as well as optional LESS stylesheets for easy customization.</p> 
+                                    </div>
+                                    <div class="col-12 col-md-6 px-5">
+                                        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                                <div class="col-12 text-center">
+                                    <div class="btn btn-outline-light"><i class="fas fa-download"></i> Download</div>
                                 </div>
-                                <div class="col-12 text-center"><div class="btn btn-outline-light"><i class="fas fa-download"></i> Download</div></div>
                             </div>
-                        </div>
                     </div>
                 </section>
 
                 <!-- form contact me da valutare la posizione -->
-                <section class="my-contact-me">
+                <section id="contact" class="mb-5">
                     <div class="container">
-                        <section class="my-box"> <!-- chissà se spacca tutto -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="title-section mb-2">
@@ -171,11 +173,30 @@
                                         </div> 
                                     </div>
                                 </div>
-                                <div class="col-12"><p>Name</p></div>   <!-- //intanto dei p presumo siano input type -->
-                                <div class="col-12"><p>Email Adress</p></div>
-                                <div class="col-12"><p>Phone Number</p></div>
-                                <div class="col-12"><p>Message</p></div> <!-- //dovrà prednere 3 volte l'altezza deglio altri -->
-                                <div class="col-12"><p>Send</p></div> <!-- //bottone send -->
+                                <div class="row">
+                                    <form class="px-5">
+                                        <div class="col-12 mb-3 px-5">
+                                            <label for="Name" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="Name">
+                                        </div>
+                                        <div class="col-12 mb-3 px-5">
+                                            <label for="InputEmail" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                        </div>
+                                        <div class="col-12 mb-3 px-5">
+                                            <label for="InputNumber" class="form-label">Phone Number</label>
+                                            <input type="text" class="form-control" id="InputNumber" placeholder="+39">
+                                        </div>
+                                        <div class="col-12 mb-3 px-5">
+                                            <label for="FormControlTextarea" class="form-label">Messge</label>
+                                            <textarea class="form-control" id="FormControlTextarea" rows="3"></textarea>
+                                        </div>
+                                        <div class="col-12 px-5">
+                                            <button type="submit" class="btn bg-green text-white">Send</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -183,23 +204,38 @@
             
             <!-- footer 3 col + 12 col sotto (sono divisi!)  -->
             <footer>
-                <section class="my-footer">
+                <section id="footer-top" class="bg-grey text-white">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-4"><h4>Location</h4></div>
-                            <div class="col-4"><h4>Around the web</h4></div>
-                            <div class="col-4"><h4>About freelancer</h4></div>
+                        <div class="row p-sm-4 p-md-5 text-center align-items-center">
+                            <div class="col-sm-12 mb-sm-3 col-md-4">
+                                <h4>Location</h4>
+                                <p> 2215 Jhon Daniel Drive Clark, MO 54243</p>
+                            </div>
+                            <div class="col-sm-12 mb-sm-3 col-md-4">
+                                <h4>Around the web</h4>
+                                <div class="icons mb-3">
+                                    <i class="fab fa-facebook-f rounded-circle"></i><i class="fab fa-google-plus-g rounded-circle"></i><i class="fab fa-twitter rounded-circle"></i><i class="fab fa-linkedin-in rounded-circle"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-sm-4 col-md-4">
+                                <h4>About freelancer</h4>
+                                <p>Freelance is a free to use, open surce Bootsrap theme created by <a href="#" class="text-decoration-none color-txt-green">Start Bootstrap</a></p>
+                            </div>
                         </div>
                     </div>
                 </section>
-
-                <section class="container-fluid yellow"> <!-- classe yello assolutemante temporanea v -->
-                    <div class="col-12">copyright c</div>
+                <section id="footer-bot" class="bg-black text-white"> <!-- classe yello assolutemante temporanea v -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="copyright d-flex align-items-center justify-content-center">
+                                    <p class="mb-0">Copyright <i class="far fa-copyright"></i> Your Website 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </footer>
-
-            
-
 </body>
 
 </html>
