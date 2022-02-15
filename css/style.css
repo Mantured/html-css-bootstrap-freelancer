@@ -2,10 +2,17 @@
 
 header{
     background-color: rgb(44, 62, 80);
-    /* height: 70px; */
 }
-.my-height{
-    height: 70px;
+
+nav.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.navbar div.navbar-collapse a{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
 }
 
 /* * Jumbotron */
