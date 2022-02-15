@@ -14,6 +14,26 @@ p{
     font-size: 1.05rem;
 }
 
+/* * separatore linee stellina  */
+
+.title-section{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.line-star{
+    width: 150px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+
+.fa-star{
+    font-size: 1.5rem;
+}
 
 
 /* *Navbar con header */
@@ -21,13 +41,7 @@ header{
     background-color: rgb(44, 62, 80);
 }
 
-nav.navbar a{
-    color: white;
-    text-decoration: none;
-}
-
 nav.navbar div.navbar-collapse a{
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 1.1rem;
 }
@@ -46,32 +60,10 @@ section#jumbotron{
     justify-content: space-evenly;
     margin: 0 auto;
 }
+
 #photo-user{
     width: 250px;
 }
-
-/* * separatore linee stellina  */
-.line-star{
-    width: 150px;
-    height: 4px;
-    border-radius: 4px;
-    background-color: whitesmoke;
-}
-
-.fa-star{
-    font-size: 1.5rem;
-}
-
-
-.title-section{
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-
 
 /* * main */
 section#portfolio div div.row div img{
@@ -91,7 +83,6 @@ section#footer-top div.container div.row div i.fab{
 section#footer-bot div.container div.row div.col-12 div.copyright{
     height: 70px;
 }
-
 
 /* * colori */
 .bg-green{
