@@ -1,5 +1,22 @@
-/* *Navbar con header */
+h1{
+    font-size: 3rem;
+}
 
+h4,
+h3,
+h2,
+h1{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 1.05rem;
+}
+
+
+
+/* *Navbar con header */
 header{
     background-color: rgb(44, 62, 80);
 }
@@ -16,7 +33,6 @@ nav.navbar div.navbar-collapse a{
 }
 
 /* * Jumbotron */
-
 section#jumbotron{
     background-color: rgb(26, 188, 156);
 }
@@ -30,13 +46,11 @@ section#jumbotron{
     justify-content: space-evenly;
     margin: 0 auto;
 }
-
 #photo-user{
     width: 250px;
 }
 
 /* * separatore linee stellina  */
-
 .line-star{
     width: 150px;
     height: 4px;
@@ -57,19 +71,15 @@ section#jumbotron{
     justify-content: space-evenly;
 }
 
-h1{
-    font-size: 3rem;
-}
+
 
 /* * main */
-
 section#portfolio div div.row div img{
     width: 100%;
     border-radius: 1rem;
 }
 
 /* * footer */
-
 section#footer-top div.container div.row div i.fab{
     border: 1px solid whitesmoke;
     width: 50px;
@@ -83,10 +93,7 @@ section#footer-bot div.container div.row div.col-12 div.copyright{
 }
 
 
-
-
-
-
+/* * colori */
 .bg-green{
     background-color: rgb(26, 188, 156);
 }
@@ -101,46 +108,6 @@ section#footer-bot div.container div.row div.col-12 div.copyright{
 .color-txt-green{
     color:rgb(39, 146, 137) ;
 }
-
-
-/* *header testing */
-h4,
-h3,
-h2,
-h1{
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-header .container .row .col-6 h4{
-    display: inline;
-}
-
-p{
-    font-size: 1.05rem;
-}
-
-
-
-
-
-
-
-
-/* Prove per il centraggio */
-
-/* .my-center-row{
-    text-align: center;
-    align-items: center;
-    text-transform: uppercase;
-} */
-
-/* *meglio con alignt items */
-/* .container .row div h3, 
-.container .row div h4{
-    text-align: center;
-    line-height: 70px;
-} */
 
 
 
